@@ -38,7 +38,7 @@ function game(numberOfRounds) {
   let result;
   let resultText;
   for (let i = 0; i <= numberOfRounds; i++) {
-    playerSelection = prompt("Choose rock, paper or scissors.");
+    playerSelection = prompt("Choose rock, paper or scissors.").toLowerCase();
     computerSelection = getComputerChoice();
     result = round(playerSelection, computerSelection);
     if (result == "player") {
